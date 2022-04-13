@@ -42,6 +42,15 @@ long exchange(long sellTokenBalance, long buyTokenBalance, long sellTokenQuant) 
 int main() {
     double y0();
     printf("y0(1e300) = %1.20e\n", y0(1e300));
+    //double y0();
+    _LIB_VERSION =  _IEEE_;
+    printf("IEEE: y0(1e300) = %1.20e\n",y0(1e300));
+    _LIB_VERSION = _XOPEN_;
+    printf("XOPEN y0(1e300) = %1.20e\n",y0(1e300));
+    _LIB_VERSION = _POSIX_;
+    printf("POSIX y0(1e300) = %1.20e\n",y0(1e300));
+    _LIB_VERSION = _SVID_;
+    printf("SVID  y0(1e300) = %1.20e\n",y0(1e300));
     printf("%ld\n", exchange(4732214, 2202692725330, 29218) + 608405);
     exit(0);
 }

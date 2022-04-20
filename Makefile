@@ -54,7 +54,7 @@ CC	= gcc
 #
 # Default IEEE libm
 #
-CFLAGS	= -g -O2 -D_IEEE_LIBM
+CFLAGS	= -g -O2 -D__NEWVALID
 
 CHMOD	= chmod
 
@@ -62,7 +62,7 @@ CP	= cp
 
 INCFILES = fdlibm.h
 
-LDFLAGS	= 
+LDFLAGS	=
 
 LIB	= libfdm.a
 

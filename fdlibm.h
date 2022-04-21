@@ -34,9 +34,9 @@
 
 #ifdef __NEWVALID       /* special setup for Sun test regime */
 #if defined(i386) || defined(i486) || \
-    defined(intel) || defined(x86) || defined(arm) || \
-    defined(i86pc) || defined(_M_IA64) || defined(ia64) ||defined(__x86_64__) \
-    defined(__arm__) || defined(__aarch64__)
+    defined(intel) || defined(x86)  || defined(i86pc) || \
+    defined(_M_IA64) || defined(ia64) ||defined(__x86_64__) || defined(__alpha) || defined(__osf__) || \
+    defined(__arm__) || defined(__aarch64__)|| defined(arm) || defined(__arm64__)
 #define _LITTLE_ENDIAN
 #endif
 #endif
